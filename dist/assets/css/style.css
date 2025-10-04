@@ -1,0 +1,109 @@
+:root { 
+  --primary-color: #0d3b66;     /* Deep Blue */
+  --secondary-color: #3da5d9;   /* Teal Accent */
+  --bg-light: #f4f6f8;          /* Light Gray Background */
+  --text-dark: #1c1c1c;         /* Dark Text */
+  --footer-bg: #0b1d33;         /* Footer Color */
+  --card-gradient-start: #0d3b66;
+  --card-gradient-end: #3da5d9;
+  --hero-bg: none; /* gradient instead of image */
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar Dark Gradient */
+.navbar {
+  background: linear-gradient(135deg, #0b2a4a, #1b4f72);
+  color: white;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar-brand i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  color: #f4d35e;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin-left: 0.8rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #f4d35e !important;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #0d3b66, #3da5d9); /* gradient instead of image */
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Feature / Service Cards */
+.feature-card {
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-end));
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
