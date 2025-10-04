@@ -51,7 +51,15 @@ All dependencies are listed in `package.json` and can be installed via **npm**.
 4. Any changes in the source templates or assets require re-running the build script to update the `dist/` folder.
 
 ## ScreenShots
+
+## Home Page
 ![image alt](https://github.com/NavyaSree35/task2-keshavsoftware-navyasree/blob/2f83e79afafe90ce8e558fc70da0fd919e836ed1/Home%20Page.png)
+
+## About Page
+![image alt]()
+
+## Contact Page
+![image alt]()
 
 ## Live Link
 [View Live Project](https://navyasree35.github.io/task2-keshavsoftware-navyasree/)
